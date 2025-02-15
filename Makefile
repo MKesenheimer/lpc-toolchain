@@ -59,10 +59,10 @@ SED	:= sed
 SHUF	:= shuf
 HOST_OS := $(shell uname)
 ifeq ($(HOST_OS), Linux)
-    SED_I := $(SED) -i
+	SED_I := $(SED) -i
 	TAIL1 := tail -1 -
 else ifeq ($(HOST_OS), Darwin)
-    SED_I := $(SED) -i ''
+	SED_I := $(SED) -i ''
 	TAIL1 := tail -1
 endif
 
